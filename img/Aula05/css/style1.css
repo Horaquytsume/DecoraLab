@@ -1,0 +1,11 @@
+.barra {
+  background-color: teal;
+  text-align: center;
+  padding: 20px;
+}
+.imgHome {
+  margin: 10px 25%;
+  width: 50%;
+  height: auto;
+  transition: ease 2s;
+}

@@ -1,0 +1,581 @@
+/* 
+        font-family: 'Homemade Apple', cursive;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Slab', serif; 
+        */
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            /* um elemneto abaixo do outro */
+            flex-direction: column;
+        }
+        header{
+            flex: 1;
+            background-color: #263238;
+            color: #fff;
+            font-family: 'Homemade Apple', cursive;
+        }
+        header h1{
+            padding-left: 200px;
+            padding-top: 40px;
+        }
+        header nav{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 40px;
+        }
+        /* não aparecerem os ícones */
+        header #menu, 
+        header nav #fechar{
+            display: none;
+        }
+        header nav ul{
+            list-style: none;
+        }
+        header nav ul li{
+            background-color: #fff;
+            display: inline-block;
+            padding: 20px 100px;
+            transition: ease 0.5s;
+        }
+        header nav ul li a{
+            font-family: 'Roboto Slab', serif;
+            color: #000;
+            text-decoration: none;
+            font-size: 12pt;
+            /* alteração das letras uppercase todas as letras maiusculas */
+            /* capitalize = a primeira letra maiuscula */
+            text-transform: capitalize;
+        }
+        /* quando eu passar o ponteiro do mousse no "li" ele formata o "a"*/
+        header nav ul li:hover{
+            background-color: crimson;
+        }
+        header nav ul li:hover > a{
+            color: #fff;
+        }
+        main{
+            flex: 1;
+        }
+        main #painel{
+            height: 400px;
+            background-image: url("../img/painel.jpg");
+            background-size: 100%;
+            background-position: 0px -300%;
+        }
+        footer{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            background-color: #263238;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10pt;
+            padding: 50px;
+        }
+        footer #redes, footer #end{
+            flex: 1;
+            color: #fff;
+        }
+
+        footer #end{
+            text-align: right;
+            padding-right: 50px;
+            padding-top: 10px;
+        }
+        
+        footer #redes ul{
+            /* para tirar as bolinhas */
+            list-style: none;
+        }
+        
+        footer #redes ul li{
+            display: inline-block;
+        }
+
+        footer #redes ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        footer #redes ul li a i{
+            font-size: 30px;
+            color: #fff;
+            margin: 10px;
+        }
+        /* empurrar os break points para baixo para iniciar a formatação css da página INDEX */
+
+        main #faixahome1{
+            padding: 50px 100px;
+            /* 0.90 é uma transparência */
+            background-color: rgba(240,240,240,0.90);
+        }
+        main #faixahome1 h2{
+            font-family: 'Montserrat', sans-serif;
+            margin: 20px;
+        }
+
+        main #faixahome1 div{
+            font-family: 'Roboto Slab', serif; 
+            padding-left: 100px; 
+            padding-right: 100px;
+            /* distancia entre as linhas */
+            line-height: 30px;
+            text-align: justify;
+        }
+
+        main #faixahome2 {
+            background-color: #fff;
+            /* para todos os lados */
+            padding: 100px;
+            /* margem */
+            margin: 400px 0px;
+        }
+
+        main #faixahome2 h2{
+            font-family: 'Montserrat', sans-serif;
+            margin: 40px;
+            text-align: center;
+            font-size: 30pt;
+        }
+        
+        /* deixar os 5 cliente um ao lado do outro DISPLAY FLEX */
+        main #faixahome2 #clientes{
+            display: flex;
+            flex-direction: row;
+            /* faz a quebra quando atela fica menor, é um tipo de responsividade
+            se ficar bom não preciso alterar mais nada */
+            flex-wrap: wrap;
+
+        }
+
+        /* acertar a distância entre os clientes */
+        main #faixahome2 #clientes div{
+            flex: 1;
+            margin: 10px;
+
+        }
+
+        /* formatação da área do vídeo*/
+        main #faixahome3{
+            background-color: #fff;
+            /* criar distância */
+            padding-top: 100px;
+        }
+
+        main #faixahome3 h2{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30pt;
+        }
+
+        main #faixahome3 div iframe{
+            width: 100%;
+            height: 700px;
+        }
+       
+        /* formatação da página PROJETOS */
+        
+        main #sala h3, 
+        main #cozinha h3,
+        main #quarto h3,
+        main #banheiro h3,
+        main #jantar h3{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40pt;
+            /* peso da fonte: negrito (bolder) ou com efeito de traçado bem fino (lighter) */
+            font-weight: lighter;
+            text-align: center;
+            padding: 50px 0px;
+            /* rgb 0,0,0 é preto 
+            a de alpha efeito de transparente em percentual % ou decimal 0 ponto algum número */
+            color: rgba(0,0,0, 0.4);
+        } 
+        /* copiar, colar e alterar h3 para h2 */
+        main #sala h2, 
+        main #cozinha h2,
+        main #quarto h2,
+        main #banheiro h2,
+        main #jantar h2{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40pt;
+            text-align: center;
+            /* descolar do topo */
+            padding-top: 60px;
+            /* rgb 0,0,0 é preto 
+            a de alpha efeito de transparente em percentual % ou decimal 0 ponto algum número */
+            color: rgba(0,0,0, 0.9);
+        } 
+        /* fotos 3 colunas e 2 linhas */
+        main #sala div{
+            /* um pouco menor que o site */
+            width: 90%;
+            /* alinhar ao centro a DIV (usar sempre o margin*/
+            margin-left: auto;
+            margin-right: auto;
+            display:flex;
+            /* uma ao lado da outra */
+            flex-direction: row;
+            flex-wrap: wrap; /* quebra de linha das fotos */
+        }
+        main #sala div img{
+            flex: 1;
+            /* ajustar as fotos em si */
+            /* 100/3 = dá dizima vou arredondar  */
+            width: 32%;
+            height: auto;
+            /* transparência */
+            opacity: 0.8;
+            /* mouse no formato de hand(mão) */
+            cursor: pointer;
+            transition: ease 0.5s;
+            
+        }
+       
+        main #sala div img:hover {
+            opacity: 1;
+
+        }
+
+        main #cozinha #conteudo{
+            display: flex;
+            flex-direction: row;
+        }
+        main #cozinha #destaque{
+            flex: 1;
+        }
+
+        main #cozinha #destaque img{
+            width: 100%;
+            height: auto;
+        }
+
+        main #cozinha #miniatura{
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        main #cozinha #miniatura img{
+            flex: 1;
+            width: 32%;
+            height: auto;
+            margin: 5px;
+
+        }
+        
+        main #quarto div{
+        display: flex;
+        background-color: #263238;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*o que passa do tamanho da DIV é ocultado*/
+        overflow: hidden;
+        } 
+
+        /* fotos QUARTO 2 por linha */
+        main #quarto div img{
+            flex: 1;
+            width: 40%;
+            height: auto;
+            /* realizar o efeito de inclinação nas imagens */
+            transform: skewX(15deg);/* posição X em 15 graus */
+           /* espaço entre as imagens */
+            margin: 5px;
+            cursor: pointer;
+            /* meio segundo de animação quando passa o ponteiro do mouse */
+            transition: ease 0.5s;
+        }
+         
+        main #quarto div img:hover{
+        transform: scale(1.2);
+        transform: skewX(0deg);
+        /* fazer a imagem ficar sobre as outras  */
+        z-index: 1000;
+        }
+
+        main #banheiro #area{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 10px;
+            border: 1px dooted silver;/* solid=sólido dotted=pontilhado double=duas linhas sólidas tem que colocar no mínimo 2px*/
+        }
+        main #banheiro #area div{
+            flex: 1;
+            background-color: #fff;
+            /* sombra em uma caixa ao redor dela  */
+            /* para texto é text-shadow */
+            /* a primeira posição é X a segunda Y (pósitivo para baixo negativo para cima, terceiro efeito de esfumaçado mais próximo do 0 fica sólido*/
+            box-shadow: 5px 5px 10px #666;
+            text-align: center;
+            /* sentido horário 
+            1°margem de topo 
+            2°margem da direita 
+            3°margem de baixo 
+            4° margem da esquerda  */
+            padding: 40px 0px 100px 0px;
+            margin: 5px;
+        }
+        main #banheiro #area div img{
+            width: 200px;
+            height: 200px;
+            /* arredondar os cantos das imagens */
+            border-radius: 50%;
+        }
+        main #jantar div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        main #jantar div img{
+            flex: 1;
+            /* 100% dividido por 6 fotos o resultado não é exato  */
+            width: 15%;
+        }
+
+        main form{
+            width: 40%;
+            padding: 20px;
+            /* formato de CRUZ emcima e embaixo primeiro valor direita esquerda automático */
+            margin: 30px auto;
+        }
+        /* inputs nome, email, telefone e submit fiquem coma a mesa formatação */
+        main form input, 
+        main form textarea{
+            width: 90%;
+            padding: 10px;
+            display: block;
+            margin: 5px;
+        }
+        main form textarea{
+            height: 200px;
+        }
+        /* formatação do botão ENVIAR */
+        main form input[type=submit]{
+            width: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ---------break points para o projeto ----------- */
+         /* 3 intervalos de break point*/
+        
+         /*-------------------* Telas de smartphones ---------*/
+        @media (min-width: 0px) and (max-width: 575.98px) {
+            header h1{
+                padding: 0;
+                text-align: center;
+        }
+        main #painel {
+            height: 100px;
+            background-position: 0px -20px;
+        }
+        header nav{
+        background-color: #000;
+        /* v(viewport) h (height); 100% da altura da tela do dispositivo */
+        height: 100vh;             
+        /* descolar o layout*/
+        position: fixed;
+        /* fazer a barra iniciar no topo do navegador e do lado de fora a esquerda do navegador */
+        top: 0;
+        /* esconder o menu da tela do dispositivo */
+        left: -250px;
+        width: 200px;
+        padding-top: 100px;
+        text-align: left;
+        /* animação */
+        transition: ease 0.5s;
+        }
+            header nav ul li{
+                display: block;
+                padding-left: 30px;
+                padding-right: 30px;
+                background-color: #000;
+    
+            }
+            header nav ul li a{
+                color: #fff;
+            }
+            /* fazer os ícones ficarem visíveis */
+            header #menu, 
+            header nav #fechar{
+                display: block;
+            }
+            header #menu{
+                position: fixed;
+                top: 10px;
+                left: 10px;
+            }
+            header nav #fechar{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+    
+        }
+
+        /* --------------- Telas de tablets ------------------ */
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            header h1{
+                padding: 0;
+                text-align: center;
+        }
+        main #painel {
+            height: 250px;
+            background-position: 0px -80px;
+        }
+        header nav{
+            background-color: #000;
+            /* v(viewport) h (height); 100% da altura da tela do dispositivo */
+            height: 100vh;             
+            /* descolar o layout*/
+            position: fixed;
+            /* fazer a barra iniciar no topo do navegador e do lado de fora a esquerda do navegador */
+            top: 0;
+            /* esconder o menu da tela do dispositivo */
+            left: -250px;
+            width: 200px;
+            padding-top: 100px;
+            text-align: left;
+            /* animação */
+            transition: ease 0.5s;
+            /* empinhamento, como camada para colocar para cima valor bem alto */
+            z-index: 10000;
+        }
+        header nav ul li{
+            display: block;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: #000;
+
+        }
+        header nav ul li a{
+            color: #fff;
+        }
+        /* fazer os ícones ficarem visíveis */
+        header #menu, 
+        header nav #fechar{
+            display: block;
+        }
+        header #menu{
+            position: fixed;
+            top: 10px;
+            left: 10px;
+        }
+        header nav #fechar{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        /* Break point - Formatação para a página HOME nas faixas 1 e 2 */
+            main #faixahome1 div{
+            padding-left: 10px; 
+            padding-right: 10px;
+            }
+            main #faixahome1{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        main{
+            /* !important = mais importante tem que prevalecer sobre outras formatações */
+            background-image: url("../img/sala_jantar2.jpg")!important;
+            background-size: 200% !important;
+            /* centro na horizontal centro na vertical */
+            /* se estivesse usando essa referência em outro lugar teria que usar o IMPORTANT */
+            background-position: center center;
+
+        }
+        /* Break point - Formatação para a página PROJETOS */
+        main #sala, 
+        main #cozinha,
+        main #quarto,
+        main #banheiro,
+        main #jantar{
+            background-color: #fff;
+        } 
+
+        main #sala div{
+            /* imagens uma abaixo da outra - quebra de linha */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        main #sala div img{
+            flex: 1;
+            /* ajustar as fotos em si */
+            width: 60%;
+            height: auto;
+            /* transparência */
+            opacity: 1;
+            /* mouse no formato de hand(mão) */
+            margin: 5px;
+        }
+        main #cozinha #destaque{
+            /* aumentar a fração, apara ocupar a área*/
+            flex: 1.52;
+        }
+        main form{
+            width: 90%;
+        }
+        /* ajustar o botão enviar */
+        main form input[type="submit"]{
+            width: 15%;
+        }   
+        
+        }
+        /* ----------Telas de desktops ----------*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            header nav{
+                width: 100%;
+        }
+
+        /* Break point - Formatação para a página HOME nas faixas 1 e 2 */
+        main #faixahome1 div{
+        padding-left: 10px; 
+        padding-right: 10px;
+        }
+        main #faixahome1{
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+        main #faixahome2 #clientes div{
+            /*  para ver onde as caixas estão  */
+            /* border: 1px solid red; */
+            /* para deixar uma foto ao lado da outra */
+            width: 40%;
+            text-align: center;
+        }
+        main #faixahome2 #clientes div img{
+            width: 250px;
+        }
+        /* elemento CLASS tema referência como ponto */
+        /* ID usamos # */
+        .ajustePHome{
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        }    
+
+        /* Break point - Formatação para a página PROJETOS */
+
+        main #cozinha #destaque{
+            /* aumentar a fração, apara ocupar a área*/
+            flex: 1.51;
+        }
+        /* Break point - Formatação para a página CONTATO */
+        main form{
+        width: 90%;
+        }
+        /* ajustar o botão enviar */
+        main form input[type="submit"]{
+            width: 15%;
+        }   
+        
+    }

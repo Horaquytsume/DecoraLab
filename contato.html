@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Coração - Interiores feitos </title>
+<!-- Link de css para a formatação de fontes do Google  -->
+<!--  no navegador escrever google fontes 
+https://fonts.google.com/ 
+select this style -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+<!-- Link para ícones do fontawesome - iconegrafia  -->
+<!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
+<script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
+
+<!-- Outra opção antdesign
+https://ant.design/ -->
+
+<!--  Outra opção: ion icons  
+https://ionic.io/ionicons/usage -->
+
+<!--  Outra opção materialize 
+    https://materializecss.com/icons.html -->
+
+<!-- Outra opção mais limitada: https://fonts.google.com/  
+icons ---- icons github -->
+
+<!-- Link de css para nosso arquivo styles -->
+<!-- link:css -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header>h1+nav>ul>li*3>a -->
+    <header>
+        <h1>DECORALAB</h1>
+        <!-- span#menu enter -->
+        
+        <span id= "menu">
+            <!--  javascript  para abrir o menu -->
+            <i class="fas fa-bars" onclick="document.getElementsByTagName('nav')[0].style.left='0px'"></i>
+        </span>
+        <nav>
+            <!-- span#fechar -->
+            <span id="fechar">
+                <!--  javascript  para abrir o menu -->
+                <i class="fas fa-window-close" onclick="document.getElementsByTagName('nav')[0].style.left='-250px'"></i>
+            </span>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="projetos.html">projetos</a></li>
+                <li><a href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main>div#painel -->
+    <main>
+        <div id="painel"></div>
+
+        <!-- form>input*4+textarea*
+        nome/email/telefone/enviar + componente específico: mensagem (textarea) 
+        ou -->
+        <!-- form>input*3+textarea+input -->
+        <form action="">
+            <!-- required = obrigatório -->
+            <input type="nome" placeholder="Nome Completo" required>
+            <input type="email" placeholder="E-Mail" required>
+            <input type="tel" placeholder="Telefone">
+            <!--  apagar name="" id="" cols="30" rows="10" (afrei os ajustes via css)-->
+            <!-- é uma caixa de mensagem -->
+            <textarea ></textarea>
+            <!-- value é o texto que aparece no botão -->
+            <input type="submit" value=" Enviar ">
+        </form>
+
+
+
+    </main>
+    <!-- footer>div#*2 -->
+    <footer>
+        <div id="end">
+            Rua Dona Felicidade, 1000  - Saão Paulo - SP <br>
+            Tel: 11 1234-5678  - contato@decoracao.com.br
+        </div>
+        <div id="redes">
+            <!-- navegação para as redes sociais definir quantas 
+                nav>ul>li*3>a -->
+                <nav>
+                    <ul>
+                        <li><a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="http://www.youtube.com"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </nav>
+        </div>
+    </footer> 
+</body>
+</html>

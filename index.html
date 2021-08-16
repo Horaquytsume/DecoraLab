@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Coração - Interiores feitos com muito capricho!</title>
+<!-- Link de css para a formatação de fontes do Google  -->
+<!--  no navegador escrever google fontes 
+https://fonts.google.com/ 
+select this style -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+<!-- Link para ícones do fontawesome - iconegrafia  -->
+<!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
+<script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
+
+<!-- Outra opção antdesign
+https://ant.design/ -->
+
+<!--  Outra opção: ion icons  
+https://ionic.io/ionicons/usage -->
+
+<!--  Outra opção materialize 
+    https://materializecss.com/icons.html -->
+
+<!-- Outra opção mais limitada: https://fonts.google.com/  
+icons ---- icons github -->
+
+<!-- Link de css para nosso arquivo styles -->
+<!-- link:css -->
+<link rel="stylesheet" href="styles.css">
+
+<!-- CSS Embed -->
+<!-- elemento específico que quero manipular faço css nele
+    só funciona dentro dessa página e não tem impacto nas outras -->
+<style>
+    main{
+        background-image: url("img/sala_jantar2.jpg");
+        /* fixar a imagem ao fundo na tela  */
+        background-attachment: fixed;
+        /* nunca repetir */
+        background-repeat: no-repeat;
+        /* tamanho da imagem */
+        background-size: 100%;
+
+    }
+</style>
+
+</head>
+<body>
+    <!-- header>h1+nav>ul>li*3>a -->
+    <header>
+        <h1>De Coração</h1>
+        <!-- span#menu enter -->
+        
+        <span id= "menu">
+            <!--  javascript  para abrir o menu -->
+            <i class="fas fa-bars" onclick="document.getElementsByTagName('nav')[0].style.left='0px'"></i>
+        </span>
+        <nav>
+            <!-- span#fechar -->
+            <span id="fechar">
+                <!--  javascript  para abrir o menu -->
+                <i class="fas fa-window-close" onclick="document.getElementsByTagName('nav')[0].style.left='-250px'"></i>
+            </span>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="projetos.html">projetos</a></li>
+                <li><a href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main>div#painel -->
+    <main>
+        <div id="painel"></div>
+        <!-- formatação da página INDEX 
+        criar 3 sessões dentro de cada uma uma DIV e um h2
+        section#*3>h2+div -->
+        <!-- sessão 1 -->
+        <section id="faixahome1">
+            <h2>Bem Vindo ao DeCoração!</h2>
+            <div>
+                <!-- bloco de texto a ser exibido 
+                lorem*5 -->
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea sit fugiat dignissimos, adipisci, aut neque consequuntur vitae obcaecati id itaque libero quidem praesentium aliquam corporis, inventore sunt delectus quisquam recusandae?
+                Neque, excepturi sed, enim ab esse omnis vitae sequi perspiciatis modi corporis iusto, consectetur quae ea reiciendis? Maiores eaque ea dolores nihil, placeat, at atque quas ducimus, consectetur adipisci voluptate?
+                Quae rem quibusdam aut odio eius laborum, non natus omnis laboriosam corrupti nobis possimus et magni dolor quidem reprehenderit architecto dolorum corporis nulla accusantium! Recusandae nobis veritatis distinctio voluptatibus animi.
+                Exercitationem iste nisi ex fugiat enim minus praesentium corporis illo cum tempora itaque et consequatur laudantium reiciendis iure, autem quaerat excepturi quod sit vitae illum? Impedit modi nobis animi a!
+                Velit adipisci quia repudiandae facere similique consectetur! Repellat nesciunt suscipit ad eius consequuntur doloremque quisquam, est voluptatibus! Rerum dolor impedit, sapiente ipsa optio iusto aperiam, itaque voluptatem est hic error?
+            </div>
+        </section>
+        <!-- sessão 2 -->
+        <section id="faixahome2">
+            <h2>Clientes Realizados</h2>
+            <!-- identificar a DIV -->
+            <div id="clientes">
+                <!-- colocar as imagens, o nome dos clientes (5) e um pequeno texto H3 e P de parágrafo-->
+                <!-- div*5>img+h3+p>lorem -->
+                <div>
+                    <img src="img/Aula05/img/img/pessoa1.png" alt="Marcos">
+                    <h3>Marcos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit iure porro neque officiis doloribus dolores iusto! Veritatis, sapiente quas cumque quidem non eaque sint, cum iste corrupti vero fugit?</p>
+                </div>
+                <div>
+                    <img src="img/Aula05/img/img/pessoa2.jpg" alt="Márcia">
+                    <h3>Márcia</h3>
+                    <p>Quaerat reprehenderit in, aliquam aperiam pariatur et laboriosam provident vitae, voluptate, expedita dolorem dicta sint veritatis officia? Quas repellat recusandae aperiam, eius asperiores aspernatur, natus iusto adipisci qui consequatur soluta.</p>
+                </div>
+                <div>
+                    <img src="img/Aula05/img/img/pessoa3.jpg" alt="Wagner">
+                    <h3>Wagner</h3>
+                    <p>Totam, officiis? Dolorem atque eos nobis iure delectus culpa amet nisi esse dicta ratione ex, eveniet, nihil earum quaerat. Animi quod iusto ipsa accusantium perferendis at rem minus, corporis asperiores.</p>
+                </div>
+                <div>
+                    <img src="img/Aula05/img/img/pessoa4.jpg" alt="Vanessa">
+                    <h3>Vanessa</h3>
+                    <p>Tenetur eaque atque expedita perferendis delectus consequatur, architecto veniam aspernatur quo sint debitis error molestias, officia quibusdam voluptate ipsum perspiciatis in optio repellat. Reiciendis tenetur, quia quibusdam nobis iusto illum.</p>
+                </div>
+                <div>
+                    <img src="img/Aula05/img/img/pessoa5.jpg" alt="Lígia">
+                    <h3>Lígia</h3>
+                    <p class="ajustePHome"> Iure nostrum dignissimos officiis facere amet consectetur, iusto optio veritatis sed! Illo ratione veritatis ipsum cumque pariatur consequatur tempora fugit fuga non placeat laudantium laboriosam porro maiores, blanditiis neque rerum.</p>
+                </div>
+            </div>
+        </section>
+        <!-- sessão 3 -->
+        <!-- link de vídeo -->
+        <section id="faixahome3">
+            <h2>O que fazemos</h2>
+            <div>
+                <!-- apagar o tamanhao (altura/largura) para fazer via css -->
+                <iframe src="https://www.youtube.com/embed/kW5pCZ72UZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+    <!-- footer>div#*2 -->
+    <footer>
+        <div id="end">
+            Rua Valsa dos casais, 79 - Saão Paulo - SP <br>
+            Tel: 11 1234-5678  - contato@decolab.com.br
+        </div>
+        <div id="redes">
+            <!-- navegação para as redes sociais definir quantas 
+                nav>ul>li*3>a -->
+                <nav>
+                    <ul>
+                        <li><a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="http://www.youtube.com"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </nav>
+        </div>
+    </footer> 
+</body>
+</html>

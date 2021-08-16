@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Coração - Interiores feitos </title>
+<!-- Link de css para a formatação de fontes do Google  -->
+<!--  no navegador escrever google fontes 
+https://fonts.google.com/ 
+select this style -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Montserrat:ital@1&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+<!-- Link para ícones do fontawesome - iconegrafia  -->
+<!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
+<script src="https://kit.fontawesome.com/e4a30d19cc.js" crossorigin="anonymous"></script>
+
+<!-- Outra opção antdesign
+https://ant.design/ -->
+
+<!--  Outra opção: ion icons  
+https://ionic.io/ionicons/usage -->
+
+<!--  Outra opção materialize 
+    https://materializecss.com/icons.html -->
+
+<!-- Outra opção mais limitada: https://fonts.google.com/  
+icons ---- icons github -->
+
+<!-- Link de css para nosso arquivo styles -->
+<!-- link:css -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header>h1+nav>ul>li*3>a -->
+    <header>
+        <h1>DECORALAB</h1>
+        <!-- span#menu enter -->
+        
+        <span id= "menu">
+            <!--  javascript  para abrir o menu -->
+            <i class="fas fa-bars" onclick="document.getElementsByTagName('nav')[0].style.left='0px'"></i>
+        </span>
+        <nav>
+            <!-- span#fechar -->
+            <span id="fechar">
+                <!--  javascript  para abrir o menu -->
+                <i class="fas fa-window-close" onclick="document.getElementsByTagName('nav')[0].style.left='-250px'"></i>
+            </span>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="projetos.html">projetos</a></li>
+                <li><a href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- main>div#painel -->
+    <main>
+        <div id="painel"></div>
+        <!-- formatação da página PROJETOS 
+        criar 5 sessões = 5 grandes áreas (cozinha, banheiro,sala, sala de estar) dentro de cada uma uma DIV e um h2
+        section#*5>h2(oqueé?)-->
+        <!-- sessão 1 -->
+        <section id="sala">
+            <h2>Projetos de Sala de Estar</h2>
+            <h3>Veja os nossos projetos e indentifique-se</h3>
+            <!-- div>img*6 (refernte ao número de fotos que tenho)-->
+            <div>
+                <img src="img/Aula05/img/img/sala1.jpg" alt="sala1">
+                <img src="img/Aula05/img/img/sala2.jpg" alt="sala2">
+                <img src="img/Aula05/img/img/sala3.jpg" alt="sala3">
+                <img src="img/Aula05/img/img/sala4.jpg" alt="sala4">
+                <img src="img/Aula05/img/img/sala5.jpg" alt="sala5">
+                <img src="img/Aula05/img/img/sala6.jpg" alt="sala6">
+            </div>
+        </section>
+        <!-- sessão 2 -->
+        <section id="cozinha">
+            <h2>Projetos de Cozinhas</h2>
+            <h3>Projetos personalizados e sob medida</h3>
+            <!-- div com imagem bem grande como se estivesse em destaque e outra DIV com fotos menores -->
+        <!-- identificar as DIV's -->
+        <!-- div#*2 -->
+
+        <!-- div#conteudo -->
+            <div id="conteudo">
+            <div id="destaque">
+            <img src="img/Aula05/img/img/cozinha7.jpg" alt="cozinha1">
+        </div>
+        <div id="miniatura">
+        <!-- img enter, as imagens tem praticamente o mesmo nome control+c e control V e muda só o número -->
+        <img src="img/Aula05/img/img/cozinha1.jpg" alt="cozinha1">
+        <img src="img/Aula05/img/img/cozinha2.jpg" alt="cozinha2">
+        <img src="img/Aula05/img/img/cozinha3.jpg" alt="cozinha3">
+        <img src="img/Aula05/img/img/cozinha4.jpg" alt="cozinha4">
+        <img src="img/Aula05/img/img/cozinha5.jpg" alt="cozinha5">
+        <img src="img/Aula05/img/img/cozinha6.jpg" alt="cozinha6">    
+        </div>
+         <!-- fim da DIV conteudo-->
+        </div>
+        </section>
+        <!-- sessão 3 -->
+        <section id="quarto">
+            <h2>Projetos de Quartos</h2>
+            <h3>O quarto dos seus sonhos</h3>
+            <!-- inclinar a imagem e quando passa o ponteiro do mousse ela volta ao normal -->
+            <!-- div>img enter -->
+            <div>
+                <img src="img/Aula05/img/img/quarto1.jpg" alt="quarto1">
+                <img src="img/Aula05/img/img/quarto2.jpg" alt="quarto2">
+                <img src="img/Aula05/img/img/quarto3.jpg" alt="quarto3">
+                <img src="img/Aula05/img/img/quarto4.jpg" alt="quarto4">
+                <img src="img/Aula05/img/img/quarto5.jpg" alt="quarto5">
+                <img src="img/Aula05/img/img/quarto6.jpg" alt="quarto6">
+            </div>
+
+        </section>
+        <!-- sessão 4 -->
+        <section id="banheiro">
+            <h2>Projetos de Banheiros</h2>
+            <!-- h3 enter-->
+            <h3>Faça o seu projeto de banheiro conosco</h3>
+        <!-- div identificada, uma div (uma caixa com uma imagem e um texto de descrição) para cada banheiro 
+        div#area>div*6>img+h4 ou fazer 1 só copiar e colar  -->
+        <div id="area">
+            <div>
+                <img src="img/Aula05/img/img/banheiro1.jpg" alt="banheiro1">
+                <h4>Estilo Europeu</h4>
+            </div>
+            <div>
+                <img src="img/Aula05/img/img/banheiro2.jpg" alt="banheiro2">
+                <h4>Banheiro reformado</h4>
+            </div>
+            <div>
+                <img src="img/Aula05/img/img/banheiro3.jpg" alt="banheiro3">
+                <h4>Banheiro do Casal</h4>
+            </div>
+            <div>
+                <img src="img/Aula05/img/img/banheiro4.jpg" alt="banheiro4">
+                <h4>Banheiro com Banheira</h4>
+            </div>
+            <div>
+                <img src="img/Aula05/img/img/banheiro5.jpg" alt="banheiro5">
+                <h4>Banheiro Verde</h4>
+            </div>
+            <div>
+                <img src="img/Aula05/img/img/banheiro6.jpg" alt="banheiro6">
+                <h4>O banho do gato<O/h4>
+            </div>
+        </div>
+        </section>
+        <!-- sessão 5 -->
+        <section id="jantar">
+            <h2>Projetos de Salas de Jantar</h2>
+            <h3>Espaço para receber e comemorar!</h3>
+            <!-- div>img -->
+
+            <div>
+                <img src="img/Aula05/img/img/sala_jantar1.jpg" alt="salaDeJantar1">
+                <img src="img/Aula05/img/img/sala_jantar2.jpg" alt="salaDeJantar2">
+                <img src="img/Aula05/img/img/sala_jantar3.jpg" alt="salaDeJantar3">
+                <img src="img/Aula05/img/img/sala_jantar4.jpg" alt="salaDeJantar4">
+                <img src="img/Aula05/img/img/sala_jantar5.jpg" alt="salaDeJantar5">
+                <img src="img/Aula05/img/img/sala_jantar6.jpg" alt="salaDeJantar6">
+            </div>
+        </section>
+
+
+    </main>
+    <!-- footer>div#*2 -->
+    <footer>
+        <div id="end">
+            Rua Valsa dos casais, 79  - Saão Paulo - SP <br>
+            Tel: 11 1234-5678  - contato@decoralab.com.br
+        </div>
+        <div id="redes">
+            <!-- navegação para as redes sociais definir quantas 
+                nav>ul>li*3>a -->
+                <nav>
+                    <ul>
+                        <li><a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="http://www.instagram.com"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="http://www.youtube.com"><i class="fab fa-youtube-square"></i></a></li>
+                    </ul>
+                </nav>
+        </div>
+    </footer> 
+</body>
+</html>
