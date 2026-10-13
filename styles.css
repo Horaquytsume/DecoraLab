@@ -66,7 +66,7 @@
         }
         main #painel{
             height: 400px;
-            background-image: url("../img/painel.jpg");
+            background-image: url("img/Aula05/img/img/painel.jpg");
             background-size: 100%;
             background-position: 0px -300%;
         }
@@ -485,7 +485,7 @@
         }
         main{
             /* !important = mais importante tem que prevalecer sobre outras formatações */
-            background-image: url("../img/sala_jantar2.jpg")!important;
+            background-image: url("img/Aula05/img/img/sala_jantar2.jpg")!important;
             background-size: 200% !important;
             /* centro na horizontal centro na vertical */
             /* se estivesse usando essa referência em outro lugar teria que usar o IMPORTANT */

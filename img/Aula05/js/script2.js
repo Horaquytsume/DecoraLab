@@ -35,7 +35,7 @@ function estrutura(){
 
 // Ações para os botões
 btn1.onclick = function(){
-    img1.src = "img/foto.jpg";
+    img1.src = "img/foto1.jpg";
 }
 
 btn2.onclick = ()=>{
